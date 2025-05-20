@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kacassignment"
+version = "0.1.0"
+description = "A simple KAC assignment"
+authors = ["samwurel", "chriso345"]
+# license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+kacassignment = "kacassignment.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
