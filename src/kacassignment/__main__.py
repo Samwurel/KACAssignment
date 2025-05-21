@@ -68,22 +68,6 @@ package = __package__
     type=str,
 )
 def main(file_path: Path, team_size: int | None, num_teams: int | None, testrow: bool, verbose: int, pref_col: str, output: str) -> None:
-    """
-    Main function to create teams based on preferences from a CSV file.
-
-    Args:
-        file_path (Path): Path to the CSV file containing preferences.
-        team_size (int | None): Size of the teams to be created.
-        num_teams (int | None): Number of teams to be created.
-        testrow (bool): If True, drop the first row of the DataFrame.
-        preference_colname (str): Name of the column containing preferences.
-    
-    Raises:
-        click.UsageError: If both team_size and num_teams are provided or neither is provided.
-    
-    Returns:
-        None
-    """
     if verbose > 1 or verbose < 0:
         click.echo("Verbose level must be either 0 or 1. Defaulting to 0.")
         verbose = 0
