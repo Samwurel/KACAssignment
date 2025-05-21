@@ -11,6 +11,11 @@ kacassignment = "kacassignment.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+numpy = "^2.2.4"
+pandas = "^2.2.3"
+pulp = "^3.1.1"
+notebook = "^7.4.2"
+click = "^8.2.1"
 
 [build-system]
 requires = ["poetry-core"]
